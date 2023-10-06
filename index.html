@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .form-box {
+            width: 300px; /* Set the desired width of the box */
+            padding: 20px; /* Add padding for spacing inside the box */
+            border: 1px solid #ccc; /* Add a border around the box */
+            border-radius: 5px; /* Add rounded corners to the box */
+            margin: 0 auto; /* Center the box horizontally on the page */
+            background-color: #f9f9f9; /* Set the background color of the box */
+            
+            }
+          
+            .form-box form {
+            display: flex;
+            flex-direction: column;
+            }
+
+        /* Style for form inputs (optional) */
+        .form-box input[type="text"],
+        .form-box input[type="submit"]
+        {
+            margin-bottom: 10px; /* Add spacing between form elements */
+            padding: 5px; /* Add padding to form inputs */
+        }
+        </style>
+    </head>
+    <body  style="background: linear-gradient(to bottom, #87CEEB, #1E90FF);">
+        <h1><center>Quality of Water</center></h1>
+        <div class="form-box">
+        <form action="/login" method="post">
+            <center>
+                <input type="text" name="year" placeholder="Enter Year" required/> </br></br>
+                <input type="text" name="do" placeholder="Enter D.0" required/> </br></br>
+                <input type="text" name="ph" placeholder="Enter PH" required/>  </br></br>
+                <input type="text" name="co" placeholder="Enter Conductivity" required/>  </br></br>
+                <input type="text" name="bod" placeholder="Enter B.O.D" required/>  </br></br>
+                <input type="text" name="na" placeholder="Enter Nitratenen" required/>   </br></br>
+                <input type="text" name="tc" placeholder="Enter Total Coliform"/ required>  </br></br>
+                <input style="color:black;" type="submit" value="Predict"> </br>
+                <b><font color="black" size=5>{{showcase}}</font></b>
+            </center>
+        </form>
+        </div>
+    </body>
+</html>
